@@ -1,39 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap');
 @import "tailwindcss";
 
-:root {
-  --navy-950: #0A0F1E;
-  --navy-900: #0D1B3E;
-  --navy-800: #1B3A6B;
-  --blue-500: #3B82F6;
-  --blue-400: #60A5FA;
-  --blue-300: #93C5FD;
-  --white: #F8FAFC;
-  --gray-400: #94A3B8;
-  --gray-600: #475569;
-}
-
 * { box-sizing: border-box; margin: 0; padding: 0; }
 html { scroll-behavior: smooth; }
-body { background-color: var(--navy-950); color: var(--white); font-family: 'Inter', sans-serif; -webkit-font-smoothing: antialiased; }
+body { background-color: #0A0F1E; color: #F8FAFC; font-family: 'Inter', sans-serif; -webkit-font-smoothing: antialiased; }
 h1, h2, h3, h4, h5 { font-family: 'Syne', sans-serif; }
-::selection { background: var(--blue-500); color: white; }
-::-webkit-scrollbar { width: 6px; }
-::-webkit-scrollbar-track { background: var(--navy-950); }
-::-webkit-scrollbar-thumb { background: var(--navy-800); border-radius: 3px; }
-
-.dot-grid {
-  background-image: radial-gradient(circle, rgba(59,130,246,0.15) 1px, transparent 1px);
-  background-size: 32px 32px;
-}
+.dot-grid { background-image: radial-gradient(circle, rgba(59,130,246,0.15) 1px, transparent 1px); background-size: 32px 32px; }
 .glow { box-shadow: 0 0 40px rgba(59,130,246,0.15); }
 .glow-text { text-shadow: 0 0 40px rgba(96,165,250,0.4); }
-.gradient-border {
-  border: 1px solid transparent;
-  background: linear-gradient(var(--navy-900), var(--navy-900)) padding-box,
-              linear-gradient(135deg, var(--blue-500), transparent) border-box;
-}
-@keyframes fadeUp { from { opacity: 0; transform: translateY(24px); } to { opacity: 1; transform: translateY(0); } }
+.gradient-border { border: 1px solid transparent; background: linear-gradient(#0D1B3E, #0D1B3E) padding-box, linear-gradient(135deg, #3B82F6, transparent) border-box; }
 @keyframes pulse-slow { 0%, 100% { opacity: 0.4; } 50% { opacity: 0.8; } }
-.animate-fade-up { animation: fadeUp 0.7s ease forwards; }
 .animate-pulse-slow { animation: pulse-slow 3s ease-in-out infinite; }
