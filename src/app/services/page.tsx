@@ -62,7 +62,7 @@ const process = [
 export default function Services() {
   return (
     <div className="pb-20">
-      <div className="max-w-6xl mx-auto px-6">
+      <div className="max-w-7xl mx-auto px-8">
 
         <div className="mb-16">
           <p className="text-xs uppercase tracking-widest text-[#3B82F6] font-semibold mb-3">Services</p>
@@ -119,18 +119,18 @@ export default function Services() {
         {/* Process */}
         <div>
           <p className="text-xs uppercase tracking-widest text-[#3B82F6] font-semibold mb-3">How we work</p>
-          <h2 className="text-4xl font-bold tracking-tight mb-12">Our process</h2>
-          <div className="grid grid-cols-1 md:grid-cols-5 gap-4">
+          <h2 className="text-5xl font-bold tracking-tight mb-16">Our process</h2>
+          <div className="grid grid-cols-1 md:grid-cols-5 gap-8">
             {process.map((step, i) => (
               <div key={step.step} className="flex flex-col gap-3 relative">
                 <div className="flex items-center gap-3">
-                  <span className="text-4xl font-bold text-[#1B3A6B] font-[Syne]">{step.step}</span>
+                  <span className="text-6xl font-bold text-[#1B3A6B] font-[Syne]">{step.step}</span>
                   {i < process.length - 1 && (
                     <div className="hidden md:block flex-1 h-px bg-gradient-to-r from-[#3B82F6]/30 to-transparent" />
                   )}
                 </div>
-                <h3 className="font-bold text-sm font-[Syne]">{step.title}</h3>
-                <p className="text-[#94A3B8] text-xs leading-relaxed">{step.desc}</p>
+                <h3 className="font-bold text-lg font-[Syne] mt-2">{step.title}</h3>
+                <p className="text-[#94A3B8] text-sm leading-relaxed mt-1">{step.desc}</p>
               </div>
             ))}
           </div>
@@ -139,6 +139,3 @@ export default function Services() {
     </div>
   );
 }
-
-
-

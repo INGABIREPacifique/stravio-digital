@@ -14,13 +14,13 @@ const milestones = [
 export default function About() {
   return (
     <div className="pb-20">
-      <div className="max-w-5xl mx-auto px-6">
+      <div className="max-w-7xl mx-auto px-8">
 
         {/* Header */}
         <div className="mb-16">
           <p className="text-xs uppercase tracking-widest text-[#3B82F6] font-semibold mb-3">About</p>
           <h1 className="text-5xl font-bold tracking-tight mb-6">The person behind<br /><span className="text-[#3B82F6]">Stravio Digital.</span></h1>
-          <p className="text-[#94A3B8] text-lg max-w-2xl leading-relaxed">
+          <p className="text-[#94A3B8] text-xl max-w-3xl leading-relaxed">
             A Salesforce developer and consultant based in Kigali, Rwanda — building CRM systems that help African businesses grow with confidence.
           </p>
         </div>
@@ -33,7 +33,7 @@ export default function About() {
                 P
               </div>
               <div>
-                <h2 className="text-xl font-bold font-[Syne]">INGABIRE Pacifique</h2>
+                <h2 className="text-2xl font-bold font-[Syne]">INGABIRE Pacifique</h2>
                 <p className="text-[#60A5FA] text-sm font-medium">Salesforce Developer & Consultant</p>
               </div>
               <div className="flex flex-col gap-2 text-sm text-[#94A3B8]">
@@ -107,6 +107,3 @@ export default function About() {
     </div>
   );
 }
-
-
-

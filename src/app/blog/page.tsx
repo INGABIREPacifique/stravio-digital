@@ -26,6 +26,14 @@ const posts = [
     readTime: "10 min read",
     tag: "Case Study",
   },
+  {
+    slug: "sales-cloud-east-africa",
+    title: "Sales Cloud for East African Businesses: What to Set Up First",
+    excerpt: "Not everything in Sales Cloud matters equally. Here's the sequence that works for SMEs in Rwanda, Kenya, and Uganda based on real implementations.",
+    date: "March 2026",
+    readTime: "6 min read",
+    tag: "Salesforce",
+  },
 ];
 
 const tagColors: Record<string, string> = {
@@ -36,23 +44,28 @@ const tagColors: Record<string, string> = {
 
 export default function Blog() {
   return (
-    <div className="pb-20">
-      <div className="max-w-4xl mx-auto px-6">
+    <div className="pb-20" style={{ paddingTop: "60px" }}>
+      <div className="max-w-7xl mx-auto px-8">
+
+        {/* Header */}
         <div className="mb-16">
-          <p className="text-xs uppercase tracking-widest text-[#3B82F6] font-semibold mb-3">Blog</p>
-          <h1 className="text-5xl font-bold tracking-tight mb-6">Insights on<br /><span className="text-[#3B82F6]">Salesforce & growth.</span></h1>
-          <p className="text-[#94A3B8] text-lg leading-relaxed">
+          <p className="text-xs uppercase tracking-widest text-[#3B82F6] font-semibold mb-4">Blog</p>
+          <h1 className="text-6xl font-bold tracking-tight mb-6">
+            Insights on<br /><span className="text-[#3B82F6]">Salesforce & growth.</span>
+          </h1>
+          <p className="text-[#94A3B8] text-xl leading-relaxed max-w-2xl">
             Practical articles on CRM strategy, Salesforce features, and building better businesses across East Africa.
           </p>
         </div>
 
-        <div className="flex flex-col gap-6">
+        {/* 2-column grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
           {posts.map((post) => (
             <div
               key={post.slug}
-              className="rounded-2xl border border-[#1B3A6B]/50 bg-[#0D1B3E]/40 p-8 hover:border-[#3B82F6]/40 transition-all group"
+              className="rounded-2xl border border-[#1B3A6B]/50 bg-[#0D1B3E]/40 p-8 hover:border-[#3B82F6]/40 transition-all group flex flex-col"
             >
-              <div className="flex items-center gap-3 mb-4">
+              <div className="flex items-center gap-3 mb-5">
                 <span className={`px-3 py-1 rounded-full text-xs font-semibold border ${tagColors[post.tag]}`}>
                   {post.tag}
                 </span>
@@ -62,7 +75,7 @@ export default function Blog() {
                 <span className="text-[#475569] text-xs">{post.date}</span>
               </div>
 
-              <h2 className="text-xl font-bold font-[Syne] mb-3 group-hover:text-[#60A5FA] transition-colors leading-snug">
+              <h2 className="text-xl font-bold font-[Syne] mb-3 group-hover:text-[#60A5FA] transition-colors leading-snug flex-1">
                 {post.title}
               </h2>
 
@@ -70,7 +83,7 @@ export default function Blog() {
 
               <Link
                 href={`/blog/${post.slug}`}
-                className="inline-flex items-center gap-2 text-[#3B82F6] hover:text-[#60A5FA] text-sm font-medium transition-colors"
+                className="inline-flex items-center gap-2 text-[#3B82F6] hover:text-[#60A5FA] text-sm font-medium transition-colors mt-auto"
               >
                 Read article <ArrowRight size={14} />
               </Link>
@@ -78,22 +91,18 @@ export default function Blog() {
           ))}
         </div>
 
-        <div className="mt-16 p-8 rounded-2xl border border-[#1B3A6B]/50 bg-[#0D1B3E]/30 text-center">
+        <div className="p-8 rounded-2xl border border-[#1B3A6B]/50 bg-[#0D1B3E]/30 text-center">
           <p className="text-[#94A3B8] text-sm mb-2">More articles coming soon.</p>
-          <p className="text-[#475569] text-xs">Follow on LinkedIn for the latest updates.</p>
           <a
             href="https://www.linkedin.com/in/ingabire-pacifique"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 mt-4 text-[#60A5FA] hover:text-white text-sm font-medium transition-colors"
+            className="inline-flex items-center gap-2 mt-2 text-[#60A5FA] hover:text-white text-sm font-medium transition-colors"
           >
-            LinkedIn → INGABIRE Pacifique
+            Follow on LinkedIn → INGABIRE Pacifique
           </a>
         </div>
       </div>
     </div>
   );
 }
-
-
-

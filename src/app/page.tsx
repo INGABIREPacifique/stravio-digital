@@ -24,7 +24,7 @@ export default function Home() {
   return (
     <>
       {/* HERO */}
-      <section className="relative min-h-screen flex items-center justify-center overflow-hidden dot-grid pt-16">
+      <section className="relative min-h-screen flex items-center justify-center overflow-hidden dot-grid">
         {/* Glow blobs */}
         <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-[#3B82F6]/10 rounded-full blur-[120px] pointer-events-none animate-pulse-slow" />
         <div className="absolute bottom-0 left-0 w-[300px] h-[300px] bg-[#1B3A6B]/20 rounded-full blur-[80px] pointer-events-none" />
@@ -69,7 +69,7 @@ export default function Home() {
       </section>
 
       {/* STATS */}
-      <section className="max-w-6xl mx-auto px-6 py-20">
+      <section className="max-w-7xl mx-auto px-8 py-20">
         <div className="grid grid-cols-3 gap-8 border border-[#1B3A6B]/50 rounded-2xl p-8 bg-[#0D1B3E]/50">
           {stats.map((s) => (
             <div key={s.label} className="text-center">
@@ -81,7 +81,7 @@ export default function Home() {
       </section>
 
       {/* SERVICES */}
-      <section className="max-w-6xl mx-auto px-6 py-12">
+      <section className="max-w-7xl mx-auto px-8 py-12">
         <div className="mb-14">
           <p className="text-xs uppercase tracking-widest text-[#3B82F6] font-semibold mb-3">What we do</p>
           <h2 className="text-4xl font-bold tracking-tight">End-to-end Salesforce,<br />done right.</h2>
@@ -101,7 +101,7 @@ export default function Home() {
       </section>
 
       {/* WHY US */}
-      <section className="max-w-6xl mx-auto px-6 py-20">
+      <section className="max-w-7xl mx-auto px-8 py-20">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
           <div>
             <p className="text-xs uppercase tracking-widest text-[#3B82F6] font-semibold mb-3">Why Stravio</p>
@@ -141,7 +141,7 @@ export default function Home() {
       </section>
 
       {/* CTA BANNER */}
-      <section className="max-w-6xl mx-auto px-6 py-12 mb-8">
+      <section className="max-w-7xl mx-auto px-8 py-12 mb-8">
         <div className="relative rounded-2xl overflow-hidden bg-gradient-to-r from-[#0D1B3E] via-[#1B3A6B]/30 to-[#0D1B3E] border border-[#3B82F6]/20 p-12 text-center">
           <div className="absolute inset-0 dot-grid opacity-30" />
           <div className="relative">
