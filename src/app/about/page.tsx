@@ -1,4 +1,4 @@
-import { Award, MapPin, Calendar } from "lucide-react";
+import { MapPin, Calendar } from "lucide-react";
 import Link from "next/link";
 import LinkedInIcon from "@/components/ui/LinkedInIcon";
 
@@ -8,7 +8,7 @@ const milestones = [
   { year: "2025", event: "Conam Launchpad & Nuru Jamii Kenya Launchpad" },
   { year: "2025", event: "Delivered Velociti Bike CRM (Sales + Service Cloud)" },
   { year: "2025", event: "Delivered Jamii Homes Real Estate CRM" },
-  { year: "2026", event: "Founded Stravio Digital · Pursuing Platform Developer I" },
+  { year: "2026", event: "Founded Stravio Digital" },
 ];
 
 export default function About() {
@@ -21,7 +21,7 @@ export default function About() {
           <p className="text-xs uppercase tracking-widest text-[#3B82F6] font-semibold mb-3">About</p>
           <h1 className="text-5xl font-bold tracking-tight mb-6">The person behind<br /><span className="text-[#3B82F6]">Stravio Digital.</span></h1>
           <p className="text-[#94A3B8] text-xl max-w-3xl leading-relaxed">
-            A Salesforce developer and consultant based in Kigali, Rwanda — building CRM systems that help African businesses grow with confidence.
+            A Salesforce administrator and Jr. developer based in Kigali, Rwanda — building CRM systems that help African businesses grow with confidence.
           </p>
         </div>
 
@@ -34,11 +34,10 @@ export default function About() {
               </div>
               <div>
                 <h2 className="text-2xl font-bold font-[Syne]">INGABIRE Pacifique</h2>
-                <p className="text-[#60A5FA] text-sm font-medium">Salesforce Developer & Consultant</p>
+                <p className="text-[#60A5FA] text-sm font-medium">Salesforce Administrator and Jr. Developer</p>
               </div>
               <div className="flex flex-col gap-2 text-sm text-[#94A3B8]">
                 <span className="flex items-center gap-2"><MapPin size={14} className="text-[#3B82F6]" /> Kigali, Rwanda</span>
-                <span className="flex items-center gap-2"><Award size={14} className="text-[#3B82F6]" /> Salesforce Platform Developer I (pursuing)</span>
               </div>
               <a
                 href="https://www.linkedin.com/in/ingabire-pacifique"
@@ -56,7 +55,7 @@ export default function About() {
               I've been working with the Salesforce platform since 2023 and have delivered end-to-end CRM implementations for two real businesses — <strong className="text-white">Velociti Bike</strong> and <strong className="text-white">Jamii Homes Real Estate</strong> — covering Sales Cloud, Service Cloud, Agentforce AI agents, Knowledge Base, and executive reporting.
             </p>
             <p className="text-[#94A3B8] leading-relaxed">
-              I've been trained through the <strong className="text-white">Conam Launchpad</strong> (Africa Ohana) and <strong className="text-white">Nuru Jamii Kenya Launchpad</strong> programs, and presented live Salesforce demos at the Africa Ohana Program Accelerator. I'm currently pursuing the <strong className="text-white">Salesforce Platform Developer I (PDI)</strong> certification.
+              I've been trained through the <strong className="text-white">Conam Launchpad</strong> (Africa Ohana) and <strong className="text-white">Nuru Jamii Kenya Launchpad</strong> programs, and presented live Salesforce demos at the Africa Ohana Program Accelerator.
             </p>
             <p className="text-[#94A3B8] leading-relaxed">
               I founded Stravio Digital to bring professional Salesforce consulting to SMEs across East Africa — businesses that deserve the same tools as large enterprises, implemented by someone who understands their context.
