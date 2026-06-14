@@ -5,7 +5,7 @@ import Link from "next/link";
 
 const projects = [
   {
-    client: "Velociti Bikes",
+    client: "Valociti Bikes",
     partners: ["Africa Ohana", "CONAM"],
     country: "Rwanda",
     tag: "Sales Cloud + Service Cloud",
@@ -97,7 +97,7 @@ export default function Portfolio() {
       <div className="max-w-7xl mx-auto px-5 md:px-8">
         <div className="mb-16">
           <p className="text-xs uppercase tracking-widest text-[#3B82F6] font-semibold mb-4">Featured Implementations</p>
-          <h1 className="text-4xl md:text-6xl font-bold tracking-tight mb-6 font-syne">
+          <h1 className="text-4xl md:text-6xl font-bold tracking-tight mb-6" style={{ fontFamily: "'Syne', sans-serif" }}>
             Real businesses.<br />
             <span className="text-[#3B82F6]">Real results.</span>
           </h1>
@@ -116,7 +116,7 @@ export default function Portfolio() {
             >
               <div className={index % 2 === 1 ? "lg:order-2" : ""}>
                 <div className="flex items-center gap-3 mb-3 flex-wrap">
-                  <h2 className="text-3xl font-bold font-syne text-white">{project.client}</h2>
+                  <h2 className="text-3xl font-bold text-white" style={{ fontFamily: "'Syne', sans-serif" }}>{project.client}</h2>
                   <span
                     className="px-3 py-1 rounded-full text-xs font-semibold"
                     style={{ background: `${project.color}20`, color: project.color }}
