@@ -13,7 +13,7 @@ export default function Footer() {
               <span className="text-white font-bold text-sm">S</span>
             </div>
             <span className="font-bold text-lg tracking-tight font-[Syne]">
-              Stravio<span className="text-[#3B82F6]">.</span>
+              Stravio Digital<span className="text-[#3B82F6]">.</span>
             </span>
           </div>
           <p className="text-[#94A3B8] text-sm leading-relaxed">

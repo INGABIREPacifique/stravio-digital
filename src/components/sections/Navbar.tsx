@@ -31,7 +31,7 @@ export default function Navbar() {
             <span className="text-white font-bold text-sm font-[Syne]">S</span>
           </div>
           <span className="font-bold text-lg tracking-tight font-[Syne]">
-            Stravio<span className="text-[#3B82F6]">.</span>
+            Stravio Digital<span className="text-[#3B82F6]">.</span>
           </span>
         </Link>
 
