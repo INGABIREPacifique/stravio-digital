@@ -19,10 +19,12 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="en">
       <body className="bg-[#0A0F1E] text-[#F8FAFC] antialiased">
         <Navbar />
-        <main className="mt-16">{children}</main>
+        <main style={{ paddingTop: "80px" }}>{children}</main>
         <Footer />
       </body>
     </html>
   );
 }
+
+
 

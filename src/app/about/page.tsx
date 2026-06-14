@@ -13,7 +13,7 @@ const milestones = [
 
 export default function About() {
   return (
-    <div className="pt-16 pb-20">
+    <div className="pb-20">
       <div className="max-w-5xl mx-auto px-6">
 
         {/* Header */}
@@ -107,4 +107,6 @@ export default function About() {
     </div>
   );
 }
+
+
 

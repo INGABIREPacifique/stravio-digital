@@ -43,7 +43,7 @@ const projects = [
 
 export default function Portfolio() {
   return (
-    <div className="pt-16 pb-20">
+    <div className="pb-20">
       <div className="max-w-5xl mx-auto px-6">
         <div className="mb-16">
           <p className="text-xs uppercase tracking-widest text-[#3B82F6] font-semibold mb-3">Portfolio</p>
@@ -126,4 +126,6 @@ export default function Portfolio() {
     </div>
   );
 }
+
+
 
