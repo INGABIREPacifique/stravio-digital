@@ -29,7 +29,7 @@ export default function Contact() {
   };
 
   return (
-    <div className="pt-32 pb-20">
+    <div className="pt-16 pb-20">
       <div className="max-w-5xl mx-auto px-6">
 
         <div className="mb-16">

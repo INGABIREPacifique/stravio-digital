@@ -36,7 +36,7 @@ const tagColors: Record<string, string> = {
 
 export default function Blog() {
   return (
-    <div className="pt-32 pb-20">
+    <div className="pt-16 pb-20">
       <div className="max-w-4xl mx-auto px-6">
         <div className="mb-16">
           <p className="text-xs uppercase tracking-widest text-[#3B82F6] font-semibold mb-3">Blog</p>
