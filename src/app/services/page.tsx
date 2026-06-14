@@ -61,7 +61,7 @@ const process = [
 
 export default function Services() {
   return (
-    <div className="pt-24 pb-20">
+    <div className="pt-32 pb-20">
       <div className="max-w-6xl mx-auto px-6">
 
         <div className="mb-16">

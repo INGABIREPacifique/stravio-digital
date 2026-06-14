@@ -23,9 +23,7 @@ export default function Navbar() {
   }, []);
 
   return (
-    <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-      scrolled ? "bg-[#0A0F1E]/95 backdrop-blur-md border-b border-[#1B3A6B]/50" : "bg-transparent"
-    }`}>
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-[#0A0F1E]/95 backdrop-blur-md border-b border-[#1B3A6B]/50">
       <div className="max-w-6xl mx-auto px-6 flex items-center justify-between h-16">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2 group">
